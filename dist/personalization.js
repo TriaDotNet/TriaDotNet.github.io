@@ -1,6 +1,6 @@
 (() => {
  'use strict';
- const BACKGROUND='apZ-FtdD4VE', SONG='gN79oyvYE-Q';
+ const BACKGROUND='iOQEJUw2NlE', BACKGROUND_START=28, SONG='gN79oyvYE-Q';
  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
  const nativeAnimate=Element.prototype.animate;
  Element.prototype.animate=function(frames,options){
@@ -26,12 +26,12 @@
   if(started&&!backgroundPlayer){
    backgroundPlayer=new YT.Player('background-player',{
     videoId:BACKGROUND,width:320,height:200,
-    playerVars:{autoplay:1,controls:1,playsinline:1,loop:1,playlist:BACKGROUND,rel:0,origin:location.origin},
-    events:{onReady:play,onStateChange:e=>{
+    playerVars:{autoplay:1,start:BACKGROUND_START,controls:1,playsinline:1,loop:1,playlist:BACKGROUND,rel:0,origin:location.origin},
+    events:{onReady:e=>{e.target.seekTo(BACKGROUND_START,true);play();},onStateChange:e=>{
      if(e.data===YT.PlayerState.PLAYING){if(songPlaying||!wanted){e.target.pauseVideo();return;}update();note.textContent='Musik latar • volume lembut';}
      else if(e.data===YT.PlayerState.PAUSED&&!songPlaying&&wanted)update('Musik dijeda');
     },onAutoplayBlocked:()=>{wanted=false;update();note.textContent='Ketuk tombol Putar musik untuk memulai.';},
-    onError:()=>{wanted=false;update('Buka musik');note.innerHTML='Video tidak dapat diputar di sini. <a href="https://www.youtube.com/watch?v='+BACKGROUND+'" target="_blank" rel="noopener">Buka di YouTube</a>.';}}
+    onError:()=>{wanted=false;update('Buka musik');note.innerHTML='Video tidak dapat diputar di sini. <a href="https://www.youtube.com/watch?v='+BACKGROUND+'&t='+BACKGROUND_START+'s" target="_blank" rel="noopener">Buka di YouTube</a>.';}}
    });
   }
   document.querySelectorAll('iframe').forEach(frame=>{
@@ -54,7 +54,7 @@
  function start(){started=true;wanted=true;update('Memuat musik…');initialize();play();}
  function mount(){
   const widget=document.createElement('aside');widget.className='music-widget';widget.setAttribute('aria-label','Musik latar');
-  widget.innerHTML='<div class="music-panel" hidden><div class="music-panel-header"><span>Lagu untuk menemani kamu</span><a href="https://www.youtube.com/watch?v='+BACKGROUND+'" target="_blank" rel="noopener">YouTube ↗</a></div><div id="background-player"></div><div class="music-note">Musik dimulai setelah ketukan pertama.</div></div><div class="music-controls"><button class="music-toggle" type="button" aria-pressed="false">'+icon+'<span>Putar musik</span></button><button class="music-expand" type="button" aria-label="Tampilkan pemutar musik" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3Z"/></svg></button></div>';
+  widget.innerHTML='<div class="music-panel" hidden><div class="music-panel-header"><span>Lagu untuk menemani kamu</span><a href="https://www.youtube.com/watch?v='+BACKGROUND+'&t='+BACKGROUND_START+'s" target="_blank" rel="noopener">YouTube ↗</a></div><div id="background-player"></div><div class="music-note">Musik dimulai setelah ketukan pertama.</div></div><div class="music-controls"><button class="music-toggle" type="button" aria-pressed="false">'+icon+'<span>Putar musik</span></button><button class="music-expand" type="button" aria-label="Tampilkan pemutar musik" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3Z"/></svg></button></div>';
   document.body.append(widget);button=widget.querySelector('.music-toggle');label=button.querySelector('span');panel=widget.querySelector('.music-panel');note=widget.querySelector('.music-note');
   button.onclick=()=>{if(!started)start();else{wanted=!wanted;play();update();}};
   const expand=widget.querySelector('.music-expand');expand.onclick=()=>{panel.hidden=!panel.hidden;expand.setAttribute('aria-expanded',String(!panel.hidden));expand.setAttribute('aria-label',panel.hidden?'Tampilkan pemutar musik':'Sembunyikan pemutar musik');if(!started)start();};
@@ -68,7 +68,7 @@
   const observer=new MutationObserver(()=>{if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;initialize();});});
   observer.observe(document.body,{childList:true,subtree:true});
   let route=location.pathname;
-  const routeChange=()=>{if(location.pathname===route)return;route=location.pathname;songPlaying=false;play();update();};
+  const routeChange=()=>{if(location.pathname===route)return;route=location.pathname;songPlaying=false;play();update();window.BirthdayLetter?.refresh();};
   for(const method of ['pushState','replaceState']){const original=history[method];history[method]=function(...args){const result=original.apply(this,args);requestAnimationFrame(routeChange);return result;};}
   addEventListener('popstate',routeChange);
  }
