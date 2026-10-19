@@ -1,0 +1,10 @@
+(globalThis["webpackChunk_canva_web"] = globalThis["webpackChunk_canva_web"] || []).push([[64414],{
+
+/***/ 868641:
+function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(944221);globalThis._5f74ec40302898c5a55451c9fbd04240 = globalThis._5f74ec40302898c5a55451c9fbd04240 || {};(function(__c) {var Sad=__webpack_require__(296713),y2=Sad.jsx,Tad=Sad.jsxs;var Uad=__webpack_require__(347671).PA;var Vad=__webpack_require__(978109),Wad=Vad.useCallback,Xad=Vad.useMemo,Yad=Vad.useState;var Zad=__webpack_require__(805738).A;var $ad=class{get Y8(){return!this.rm.active}get GK(){return __c.od()||this.isPlaying||this.$j}get g9(){return!this.GK}get isPlaying(){return this.pk.isPlaying(this.fill)}get ke(){return this.pk.ke(this.fill)}get $j(){return this.pk.$j(this.fill)}get Yj(){return this.pk.Yj(this.fill)}get duration(){return this.pk.getDuration(this.fill)}get Wq(){return this.pk.getState(this.fill).Wq}get currentTime(){return this.pk.getCurrentTime(this.fill)}get Zh(){return __c.nz(this.pk,this.fill)}get volume(){return this.pk.getVolume(this.fill)}get muted(){return this.volume===
+0}constructor(a,b,c){this.pk=a;this.fill=b;this.rm=c;this.contentType=1;this.xa=this.zIndex=void 0;this.Mja=this.bP=this.BU=this.mE=this.WTa=this.qTa=this.IK=this.Kja=!0;this.xU=this.x1a=!1}};__c.o4a={tda:Uad(a=>{const {pk:b,y4a:c,hJb:d,...e}=a,f=e.item;__c.x(f.type==="design");const [g,h]=Yad(0),k=Xad(()=>new __c.Wgb,[]),l=__c.y(__c.Zz(c,__c.y(f.V.first()))),m=Wad(r=>{r!=null&&k.zna(r)},[k]),n=k.active?{width:g,left:0}:a.ae,p=Xad(()=>new $ad(b,l,k),[l,k,b]),q=Xad(()=>new __c.sz(b,l),[l,b]);return a.ja.$f?.CCa!=null?y2(d,{...e}):y2(Zad,{onResize:r=>h(r.entry?.width??0),children:({measureRef:r})=>Tad("div",{ref:__c.be(m,r),className:"jkKFFw",children:[y2(d,{...e,ae:n}),y2(__c.rz,{store:p,
+controller:q,WDa:!0,rm:k})]})})})};
+}).call(globalThis, globalThis._5f74ec40302898c5a55451c9fbd04240);}
+
+}])
+//# sourceMappingURL=sourcemaps/42f5cb0352835b41.js.map

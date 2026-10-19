@@ -1,0 +1,11 @@
+(globalThis["webpackChunk_canva_web"] = globalThis["webpackChunk_canva_web"] || []).push([[27918],{
+
+/***/ 57167:
+function(_, __, __webpack_require__) {__webpack_require__.n_x = __webpack_require__.n;const __web_req__ = __webpack_require__;__web_req__(944221);__web_req__(144328);globalThis._5f74ec40302898c5a55451c9fbd04240 = globalThis._5f74ec40302898c5a55451c9fbd04240 || {};(function(__c) {__c.Eld={Uk:__c.qy()(({Oy:{expr:a}})=>({...__c.VU,metadata:{type:"demo-11",name:__c.dc("vAIjvQ",[11])},LJ:["responsive"],C:{type:0,Kt:({C:b})=>{const c=a.classes.QX;var d=a.classes.M4;const e=a.classes.PR,f=__c.pS.create({...__c.Q5b,box:{top:50,left:50,width:50,height:50},zn:[4],Yc:2,text:{...__c.jD,stream:__c.vj.rb().ib("\n").build()},Eb:void 0});Object.defineProperty(f,"text",{get:()=>b.RAb});const g=d.create({},{P:{Ra:a.list([()=>e.create({d:"M75 50 L100 100 L50 100 Z"},{P:{fill:c.create({},{attributes:{color:"#f5a623",
+ma:.2}})}})]),yb:a.list([f])},attributes:{top:50,left:50,width:50,height:50,viewBox:{top:50,left:50,width:50,height:50},Od:{$A:!0,jF:!1,kF:!1,rD:!1,yE:!1,JD:!1}}});d={text:{...__c.jD,stream:__c.vj.rb().attrs({color:"#ff5555","font-size":12}).ib("hi cell\n").build()},Eb:void 0};d={...__c.u5b,content:d};const h=__c.zS.create({...__c.s5b,id:"LBBBBBBBBBBBBBBH",layout:{...__c.t5b,columns:[{id:"A",width:50},{id:"B",width:50}],rows:[{height:1,minHeight:1,jm:new Map([["A","A1"],["B","B1"]])}],cellPadding:2,
+borderStyle:{color:"#4df04a",weight:.5,Wc:[]}},cells:new Map([["A1",d],["B1",d]]),top:15,left:10,width:80,height:18,K:280,S:63,locked:!0,Od:{$A:!0,jF:!1,kF:!1,rD:!1,yE:!1,JD:!1}});Object.defineProperty(h.cells.get("A1").content,"text",{get:()=>b.l$a});Object.defineProperty(h.cells.get("B1").content,"text",{get:()=>b.n$a});d={...__c.P5b,text:{...__c.jD,stream:__c.vj.rb().attrs({color:"#281caf","font-size":3}).ib("ok ?\n").build()},width:16,height:14,position:.5};const k=__c.xS.create({...__c.O5b,start:{...__c.AT,
+position:{top:60,left:10}},end:{...__c.AT,marker:3,position:{top:60,left:50}},id:"LBBBBBBBBBBBBBJ",top:58,left:10,width:40,height:4,weight:2,color:"#00c4cc",yb:[d]});Object.defineProperty(k.yb.first(()=>!0),"text",{get:()=>b.rnb});return{Oa:a.list(()=>[g,h,k])}}}}))};
+}).call(globalThis, globalThis._5f74ec40302898c5a55451c9fbd04240);}
+
+}])
+//# sourceMappingURL=sourcemaps/6c38605e4950ff4a.js.map
