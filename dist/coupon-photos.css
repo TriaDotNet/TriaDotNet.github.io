@@ -1,0 +1,26 @@
+.coupon-photos{box-sizing:border-box;max-width:980px;margin:0 auto;padding:10px 32px 120px;color:#294761;text-align:center}
+.coupon-photos *{box-sizing:border-box}
+.coupon-photos-title{font:400 clamp(44px,7vw,72px)/1.2 BirthdayScript,'Segoe Print',cursive;margin:0 0 40px;font-synthesis:none}
+.coupon-photos-title span{font-family:Georgia,serif;font-size:.5em;vertical-align:middle;color:#5474a2}
+.coupon-photos-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:44px 36px}
+.cp-frame{position:relative;flex:0 1 250px;margin:0;transition:transform .35s cubic-bezier(.22,1,.36,1)}
+.cp-frame img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.cp-frame figcaption{font:400 21px/1.3 BirthdayHand,'Segoe Print',cursive;color:#354655;padding:12px 4px 0}
+.cp-polaroid{padding:12px 12px 16px;background:#fffdf5;box-shadow:0 12px 26px #29476126;transform:rotate(-4deg)}
+.cp-tilt-right{transform:rotate(4deg)}
+.cp-scallop{padding:16px 16px 18px;background:#3d5fa8;transform:rotate(1.5deg) translateY(18px);border-radius:6px;box-shadow:0 12px 26px #29476133;
+ -webkit-mask:radial-gradient(circle 9px at 0 50%,#0000 98%,#000) 0 0/100% 26px,radial-gradient(circle 9px at 100% 50%,#0000 98%,#000) 0 0/100% 26px;-webkit-mask-composite:source-in;mask:radial-gradient(circle 9px at 0 50%,#0000 98%,#000) 0 0/100% 26px intersect,radial-gradient(circle 9px at 100% 50%,#0000 98%,#000) 0 0/100% 26px}
+.cp-scallop img{border:3px dashed #fffdf5cc;border-radius:3px}
+.cp-scallop figcaption{color:#fffdf5}
+.cp-tape{position:absolute;top:-13px;left:calc(50% - 46px);z-index:1;width:92px;height:27px;background:#e7d8bbcc;transform:rotate(-5deg);clip-path:polygon(1% 5%,99% 0,100% 95%,0 100%)}
+.cp-tape-pink{background:#f3c6d3cc;transform:rotate(6deg)}
+.cp-sticker{position:absolute;z-index:2;font:32px/1 Georgia,serif;color:#e05a7a;text-shadow:0 2px 0 #fff,0 0 0 #fff,2px 0 0 #fff,-2px 0 0 #fff,0 -2px 0 #fff;pointer-events:none}
+.cp-heart{right:-12px;bottom:46px;transform:rotate(14deg)}
+.cp-star{color:#ffd166;left:-14px;top:-12px;font-size:36px;transform:rotate(-12deg)}
+.cp-star-2{left:auto;top:auto;right:-10px;bottom:52px;font-size:26px;color:#fffdf5;text-shadow:none}
+.cp-smile{color:#5474a2;left:-12px;bottom:40px;font-size:34px;transform:rotate(-10deg)}
+.cp-frame:hover{transform:rotate(0) scale(1.03)}
+.cp-scallop:hover{transform:rotate(0) translateY(18px) scale(1.03)}
+@media(max-width:640px){.coupon-photos{padding:0 20px 120px}.coupon-photos-grid{gap:40px 22px}.cp-frame{flex-basis:calc(50% - 11px);max-width:230px}.cp-frame figcaption{font-size:17px}.cp-scallop{transform:rotate(1.5deg)}.cp-scallop:hover{transform:rotate(0) scale(1.03)}}
+@media(max-width:380px){.cp-frame{flex-basis:78%;max-width:none}}
+@media(prefers-reduced-motion:reduce){.cp-frame{transition:none}}
