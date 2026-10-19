@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="755" viewBox="0 0 800 755" role="img" aria-label="My Girl">
+<defs>
+ <filter id="paper"><feTurbulence type="fractalNoise" baseFrequency=".65" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".11"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+ <filter id="shadow" x="-20%" y="-20%" width="150%" height="150%"><feDropShadow dx="2" dy="5" stdDeviation="4" flood-color="#223e53" flood-opacity=".2"/></filter>
+</defs>
+<g filter="url(#shadow)">
+ <g transform="rotate(-6 285 180)"><path d="M174 70 394 66 403 270 168 278Z" fill="#ebe8dc"/><text x="280" y="240" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-weight="bold" font-size="220" fill="#1e2b32">m</text></g>
+ <g transform="rotate(2 504 170)"><path d="M425 40 594 43 590 290 420 285Z" fill="#f4f0e3"/><text x="505" y="269" text-anchor="middle" font-family="Georgia,serif" font-weight="bold" font-size="246" fill="#213345">Y</text></g>
+ <g transform="rotate(6 122 530)"><path d="M30 388 213 382 215 635 24 641Z" fill="#eae7da"/><text x="119" y="599" text-anchor="middle" font-family="Georgia,serif" font-weight="bold" font-size="229" fill="#243c52">G</text></g>
+ <g transform="rotate(-3 282 560)"><path d="M233 430 334 426 339 675 229 680Z" fill="#3c5a85"/><text x="284" y="641" text-anchor="middle" font-family="Georgia,serif" font-weight="bold" font-size="230" fill="#fffbed">i</text></g>
+ <g transform="rotate(2 452 553)"><path d="M362 416 552 412 556 665 357 671Z" fill="#f6f1df"/><text x="454" y="634" text-anchor="middle" font-family="Georgia,serif" font-weight="bold" font-size="224" fill="#202d38">R</text></g>
+ <g transform="rotate(-4 667 550)"><path d="M575 415 756 411 759 673 570 674Z" fill="#283a4f"/><text x="662" y="635" text-anchor="middle" font-family="Georgia,serif" font-weight="bold" font-size="231" fill="#faf5e8">L</text></g>
+</g>
+<g opacity=".16" filter="url(#paper)"><path d="M174 70 394 66 403 270 168 278Z M425 40 594 43 590 290 420 285Z M30 388 213 382 215 635 24 641Z M233 430 334 426 339 675 229 680Z M362 416 552 412 556 665 357 671Z M575 415 756 411 759 673 570 674Z" fill="#e9e5db"/></g>
+</svg>
